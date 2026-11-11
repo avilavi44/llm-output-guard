@@ -1,0 +1,34 @@
+{
+    "name": "avilavi/llm-output-guard",
+    "description": "Checks LLM-generated text against a source of truth: every number and named term must appear in the sources it cites.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Avi Lavi"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "ext-mbstring": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "AviLavi\\LlmOutputGuard\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "AviLavi\\LlmOutputGuard\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
